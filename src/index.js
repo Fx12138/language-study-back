@@ -5,7 +5,7 @@ const app = express()
 
 //引入flowerRoom.js,这个是flowerRoom相关的路由
 const user = require('./api/user')
-const article = require('./api/article')
+const article = require('./api/article/article')
 
 //使用body-parser中间件
 app.use(bodyParser.json())

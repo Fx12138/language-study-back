@@ -18,6 +18,21 @@ var articleSchema = new Schema({
         type: Number,
         default: 0
     },
+    comment: [
+        {
+            user: {
+                username: {
+                    type: String,
+                }
+            },
+            content: {
+                type: String,
+            },
+            time: {
+                type: String,
+            }
+        }
+    ],
     publishTime: String,
     modifyTime: String
 })
