@@ -6,6 +6,7 @@ const app = express()
 //引入flowerRoom.js,这个是flowerRoom相关的路由
 const user = require('./api/user')
 const article = require('./api/article/article')
+const comment = require('./api/comment/comment')
 
 //使用body-parser中间件
 app.use(bodyParser.json())
@@ -14,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 //使用各个模块的路由
 app.use("/api/user", user)
 app.use("/api/article", article)
+app.use("/api/comment", comment)
 
 
 //连接数据库
